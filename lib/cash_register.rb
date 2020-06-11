@@ -1,12 +1,31 @@
-
-class CashRegister
+class CashRegister 
+  attr_reader :discount 
   attr_accessor :total 
   
-  def initialize(total = 0)
-    @total=total
+  def initialize (discount= 20)
+    @total = 0 
+    @discount = discount 
   end 
   
-  def discount 
-    
+  def add_item (_title, price, quantity= 1)
+    @total += price * quantity 
   end 
+  
+  def apply_discount 
+    @total -= @total * @discount /100
+    if @total == 0 
+      "There is no discount to apply."
+    else 
+      "After the discount, the total comes to $#{@total}"
+    end 
+    
+    
+    
+  end
+  
+  
+  
+  
+  
+  
 end 
