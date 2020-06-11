@@ -26,5 +26,9 @@ class CashRegister
     self.last_transaction[:quantity].times do
       self.items.pop
     end
+    
+    if self.items = 0 
+      self.total= 0.0 
+    end 
   end
 end 
