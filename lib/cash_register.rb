@@ -1,6 +1,6 @@
 
 class Cash_Register
-  index = 0
+  attr_accessor :total 
   def initialize(total)
     @total=total
     index += 1 
