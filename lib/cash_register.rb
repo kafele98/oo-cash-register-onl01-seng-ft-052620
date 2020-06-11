@@ -27,3 +27,4 @@ class CashRegister
       self.items.pop
     end
   end
+end 
