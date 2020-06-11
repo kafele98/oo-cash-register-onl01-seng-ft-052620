@@ -24,4 +24,4 @@ class CashRegister
   end
   
   
-end 
+
