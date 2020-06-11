@@ -5,7 +5,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0 
     @discount = discount 
-    @items = []
+    @items = [ ]
   end 
   
 
@@ -14,7 +14,6 @@ class CashRegister
       @items << title  
     end 
       @total += price * quantity 
-    
   end
 
   
@@ -26,6 +25,7 @@ class CashRegister
         "There is no discount to apply."
     end 
   end
+  
   
 end 
   
